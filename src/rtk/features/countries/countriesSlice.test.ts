@@ -1,4 +1,4 @@
-import reducer, { selectedCountries, toggle } from './countriesSlice';
+import reducer, { toggle } from './countriesSlice';
 
 describe('countriesSlice', () => {
   test('should return initial state', () => {

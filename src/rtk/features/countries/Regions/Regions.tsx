@@ -1,3 +1,4 @@
+import React from 'react';
 import { Region } from '../Region';
 import { Skeleton } from '../../../../components/Skeleton';
 import { useGetCountriesQuery } from '../../../services/countries/apiSlice';

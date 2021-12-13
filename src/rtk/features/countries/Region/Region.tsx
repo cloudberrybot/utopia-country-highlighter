@@ -1,3 +1,4 @@
+import React from 'react';
 interface IRegion {
   name: string;
   onClick: (name: string) => void;

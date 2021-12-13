@@ -1,8 +1,9 @@
 import { Continents } from '../../rtk/features/countries/Continents';
 import { Countries } from '../../rtk/features/countries/Countries';
 import { EMPTY_STRING } from '../../rtk/features/countries/constants';
-import { Header } from '../Heading';
+import { Header } from '../Header';
 import { Navbar } from '../Navbar';
+import React from 'react';
 import { Regions } from '../../rtk/features/countries/Regions';
 import { useState } from 'react';
 

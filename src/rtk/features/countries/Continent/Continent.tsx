@@ -1,3 +1,4 @@
+import React from 'react';
 interface IContinentProps {
   name: string
   onClick: (name: string) => void;

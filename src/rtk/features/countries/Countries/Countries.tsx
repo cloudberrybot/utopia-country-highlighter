@@ -2,6 +2,7 @@ import { selectedCountries, toggle } from '../countriesSlice';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 
 import { Country } from '../Country';
+import React from 'react';
 import { Skeleton } from '../../../../components/Skeleton';
 import { useGetCountriesQuery } from '../../../services/countries/apiSlice'
 

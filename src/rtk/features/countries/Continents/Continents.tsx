@@ -1,5 +1,6 @@
 import { CONTINENTS } from '../constants';
 import { Continent } from '../Continent';
+import React from 'react';
 import { useState } from 'react';
 
 interface IContinentsProps {
