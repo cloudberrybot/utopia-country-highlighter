@@ -1,11 +1,11 @@
-import Countries from './Countries';
 import React from 'react';
+import Region from './Region';
 import { render } from '@testing-library/react';
 
 test('renders europe react link', () => {
   const { getByText } = render(
-    <Countries />
+    <Region highlight name="Africa" onClick={jest.fn} />
   );
 
-  expect(getByText(/Utopia Country Highlighter/i)).toBeInTheDocument();
+  expect(getByText(/Africa/i)).toBeInTheDocument();
 });

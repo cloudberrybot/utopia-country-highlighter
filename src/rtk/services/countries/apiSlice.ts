@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 type CountriesResponse = any[]
 
 export const apiSlice = createApi({
-  reducerPath: 'countries',
+  reducerPath: 'api',
   baseQuery: fetchBaseQuery({ 
     baseUrl: process.env.REACT_APP_COUNTRIES_API
   }),

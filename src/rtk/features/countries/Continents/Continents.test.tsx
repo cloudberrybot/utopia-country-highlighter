@@ -1,10 +1,9 @@
-import React from 'react';
-import Region from './Region';
+import Continents from './Continents';
 import { render } from '@testing-library/react';
 
 test('renders europe react link', () => {
   const { getByText } = render(
-    <Region name="Africa" />
+    <Continents onSelect={jest.fn}/>
   );
 
   expect(getByText(/Africa/i)).toBeInTheDocument();
