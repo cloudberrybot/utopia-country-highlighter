@@ -18,11 +18,11 @@ export const countriesSlice = createSlice({
   initialState,
   reducers: {
     toggle: (state, action: PayloadAction<any>) => {
-      const index = state.selected.findIndex((country: any) => country.name === action.payload.name)
+      const index = state.selected?.findIndex((country: any) => country.name === action.payload.name)
       if (index !== -1) {
-        state.selected.splice(index, 1);
+        state.selected?.splice(index, 1);
       } else {
-        state.selected.push(action.payload);
+        state.selected?.push(action.payload);
       }
     },
   },
