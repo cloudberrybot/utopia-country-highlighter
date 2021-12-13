@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <img
+    alt="logo"
+    class="rounded-full"
+    src="logo.png"
+  />
+  <span
+    class="flex absolute h-5 w-5 top-0 md:top-2 right-1 md:right-2 -mt-1 -mr-1"
+  >
+    <span
+      class="relative inline-flex rounded-full h-4 w-4 bg-green-500"
+    />
+  </span>
+</DocumentFragment>
+`;

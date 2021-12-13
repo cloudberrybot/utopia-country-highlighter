@@ -1,11 +1,17 @@
-import React from 'react';
-import Regions from './Regions';
+import { App } from '../../../../components/App';
+import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
+import { store } from '../../../app/store';
 
-test('renders europe react link', () => {
-  const { getByText } = render(
-    <Regions continent='Europe' onSelect={jest.fn}/>
-  );
+describe('Regions component', () => {
+  test('renders correctly', async () => {
+    const { asFragment } = render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
 
-  expect(getByText(/Africa/i)).toBeInTheDocument();
-});
+    expect(asFragment()).toMatchSnapshot();
+  });
+})
+

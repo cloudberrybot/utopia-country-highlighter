@@ -1,10 +1,15 @@
-import Country from './Country';
+import { App } from '../../../../components/App';
+import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
+import { store } from '../../../app/store';
+describe('Countries component', () => {
+  test('renders correctly', async () => {
+    const { asFragment } = render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
 
-test('renders europe react link', () => {
-  const { getByText } = render(
-    <Country name='Helsinki' />
-  );
-
-  expect(getByText(/Helsinki/i)).toBeInTheDocument();
-});
+    expect(asFragment()).toMatchSnapshot();
+  });
+})

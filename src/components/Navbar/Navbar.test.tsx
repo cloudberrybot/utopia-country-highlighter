@@ -1,12 +1,12 @@
-import Navbar from './Navbar';
-import React from 'react';
-import { render } from '@testing-library/react';
 import '@testing-library/jest-dom'
 
+import Navbar from './Navbar';
+import { render } from '@testing-library/react';
+
 test('renders europe react link', () => {
-  const { getByText } = render(
+  const { asFragment } = render(
     <Navbar />
   );
 
-  expect(getByText(/Utopia Country Highlighter/i)).toBeInTheDocument();
+  expect(asFragment()).toMatchSnapshot();
 });

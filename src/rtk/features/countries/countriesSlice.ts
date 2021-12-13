@@ -25,17 +25,10 @@ export const countriesSlice = createSlice({
         state.selected.push(action.payload);
       }
     },
-    select: (state, action: PayloadAction<string>) => {
-      state.selected.push(action.payload);
-    },
-    deselect: (state, action: PayloadAction<string>) => {
-      const index = state.selected.findIndex((country: any) => country === action.payload)
-      state.selected.splice(index);
-    },
   },
 })
 
-export const { select, deselect, toggle } = countriesSlice.actions
+export const { toggle } = countriesSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 export const allCountries = (state: RootState) => state.api;
