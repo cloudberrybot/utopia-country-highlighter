@@ -20,3 +20,7 @@ For the Utopia Logo for the avatar, you can use https://utopiamusic.com/logo.png
 
 * CORS is not enabled on the S3 bucket that contains the list of countries (countries.json)
 
+* Data is structured by continents, regions and countries.
+
+
+
