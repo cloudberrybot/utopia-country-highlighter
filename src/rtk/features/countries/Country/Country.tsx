@@ -10,7 +10,7 @@ function Country({ name, highlight, onClick }: ICountryProps) {
   return (
     <button
       type="button"
-      className={`${highlight ? 'text-highlighted' : 'text-gray-800'} text-lg hover:text-pink-500`}
+      className={`${highlight ? 'text-highlighted' : 'text-gray-800'} text-lg`}
       onClick={() => onClick(name)}>{name}
     </button>
   )
