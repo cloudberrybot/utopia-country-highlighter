@@ -12,7 +12,6 @@ function Region({ name, highlight, onClick }: IRegion) {
       type="button"
       className={`${highlight ? 'text-highlighted' : 'text-gray-800'} text-lg`}
       onClick={() => onClick(name)}>{name}
-      data-testid={name}
     </button>
   )
 }
