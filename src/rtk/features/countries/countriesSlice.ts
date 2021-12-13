@@ -17,8 +17,8 @@ export const countriesSlice = createSlice({
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-    toggle: (state, action: PayloadAction<string>) => {
-      const index = state.selected.findIndex((country: any) => country === action.payload)
+    toggle: (state, action: PayloadAction<any>) => {
+      const index = state.selected.findIndex((country: any) => country.name === action.payload.name)
       if (index !== -1) {
         state.selected.splice(index);
       } else {
